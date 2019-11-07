@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editText1e"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Write Post Here" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button1e"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Image" />
+
+    <Button
+        android:id="@+id/button2e"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Post" />
+
+    <TextView
+        android:id="@+id/textView1e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEWS FEED"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ListView
+        android:id="@+id/listView1e"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/black"
+        android:dividerHeight="2dp"
+        android:listSelector="@color/teal"
+        android:scrollbars="vertical" >
+    </ListView>
+
+</LinearLayout>

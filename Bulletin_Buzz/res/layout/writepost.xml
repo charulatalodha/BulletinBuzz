@@ -1,0 +1,114 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:fillViewport="true"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbars="vertical" >
+
+<LinearLayout
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/olive"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/ProfilePic"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.70"
+            android:paddingTop="20dp"
+            android:text="Narendra Modi"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/posttext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nextFocusLeft="@color/black"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+       
+    <EditText
+        android:id="@+id/writecmt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Enter ur post here.."
+        android:inputType="textMultiLine" />
+     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal" >
+
+     <TextView
+         android:id="@+id/likecount"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:paddingLeft="30dp"
+         
+         android:text="0"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textSize="30dp" />
+
+        <ImageButton
+            android:id="@+id/blike"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            
+            android:src="@drawable/like" />
+
+    <Button
+        android:id="@+id/bcomment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_weight="1"
+        android:text="Comment" />
+  </LinearLayout>
+ <TextView
+        android:id="@+id/cmtheading"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="See Comments Here.."
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/blue" />
+
+ <ListView
+     android:id="@+id/cmtlistView"
+     android:layout_width="match_parent"
+     android:layout_height="100dp"
+     android:divider="@color/black"
+     android:dividerHeight="3dp"
+     android:textColor="@color/blue" >
+ </ListView>
+   
+</LinearLayout>
+</ScrollView>

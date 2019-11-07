@@ -1,0 +1,77 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@color/black"
+    android:dividerHeight="5dp"
+    android:orientation="vertical"
+
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="20dp"
+    tools:context="com.bbuzz1.example.MainAct2$PlaceholderFragment" >
+     <EditText
+        android:id="@+id/updatepost"
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:hint="write post here"
+        android:inputType="textMultiLine"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/navy" />
+    
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/bButton1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/link"
+            android:text="Upload image"/>
+
+        <Button
+            android:id="@+id/PostButton2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/link"
+            android:text="Post" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:text="NEWS FEED"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ListView1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:divider="@color/black"
+        android:scrollbars="vertical" 
+        android:listSelector="@color/teal"
+     
+        android:dividerHeight="4dp">
+    </ListView>
+   
+   
+   
+  
+
+</LinearLayout>
