@@ -1,8 +1,9 @@
 #   BulletinBuzz
-    This Android Application Project is specifically deisgned and implemented for college students and faculty.
+    This is a communication friendly Android mobile application, specifically deisgned and implemented 
+    for college students and faculty.
     
     It has the following tabs :
-    Department e-notice, Faculty Search, Book Exchange, career Advice, Tech Talk, College Sport News.
+    Department e-notice, Faculty Search, Book Exchange, Career Advice, Tech Talk, College Sport News.
 
 
     This app was build on Eclipse and tested on Android emulator and hosted on XAMPP Server.
