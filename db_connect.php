@@ -3,6 +3,7 @@
  
 /**
  * A class file to connect to database
+ * Bulletin Buzz
  */
 class DB_CONNECT {
  
